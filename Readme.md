@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Надежда](https://up.htmlacademy.ru/htmlcss/24/user/963759).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
