@@ -11,12 +11,40 @@
 	 <img src="img/logotype.svg" alt="логотип" width="154" height="64">
 	 </a>
 	 <ul class="nav-list">
-	  <li><a href="catalog.html">Каталог</a></li>
+	  <li><a href="catalog.html">Каталог</a>
+	   <ul>
+	    <li><a href="#">Новинки</a></li>
+	    <li><a href="#">Сливочное</a></li>
+	    <li><a href="#">Щербеты</a></li>
+	    <li><a href="#">Фруктовый лед</a></li>
+	    <li><a href="#">Мелорин</a></li>
+	    </ul>
+	  </li>
 	  <li><a href="price.html">Доставка и оплата</a></li>
 	  <li><a href="info.html">О Компании</a></li>
-	 </ul> 
-	  <p class="login-link">Вход</p>
-	  <p class="basket">Пусто</p>
+	 </ul>
+      <div>
+        <a class="search" href="search.html">Поиск</a>
+		<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+	     <label class="visibully-hidden" for="field-search">Поиск</label>
+	     <input class="button-search" type="search" name="search" placeholder="Что ищем?" id="field-search">
+	    </form>
+	  </div>
+	  <p>
+     	<a class="login-link" href="login.html">Вход</a></p>
+	 <h2 class="visually-hidden">Личный кабинет</h2>
+	 <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+	  <label class="visually-hidden" for="user_email">Электронная почта пользователя</label>
+	  <input class="login-user" type="email" name="login" id="user_email" placeholder="Электронная почта" required>
+	  <label class="visually-hidden" for="user_password">Пароль пользователя</label>
+	  <input class="password-user" type="password" name="password" id="user_password" placeholder="Пароль" required>
+	  <button class="button" type="submit">Войти</button>
+	  <a class="restore" href="#">Забыли пароль?</a>
+	  <a class="new-registration" href="#">Новая регистрация</a>
+	 </form> 
+	  <p>
+       <a class="basket" href="basket.html">Пусто</a>
+	  </p>
 	</nav>
 	</header>
 	
@@ -55,10 +83,13 @@
 	<p>Подпишитесь на нашу сладкую рассылку и будете всегда в
 	курсе всего самого вкусного, что у нас просиходит. Обещаем
 	не спамить и не слать ненужной ерунды. Честно=) </p>
-	<ul>
-	 <li class="mail">Электронная почта</li>
-	 <li class="button-mailing">Отправить</li>
-	</ul> 
+	 <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
+	  <label class="visually-hidden" for="email-for-mailling">Электронная почта</label>
+	 <input class="mail" type="email" id="email-for-mailling" name="mailing" placeholder="Электронная почта">
+	 </form>
+	<p>
+      <button class="button">Отправить</button>
+	</p>
 	</section>
 	<!--форма для карты-->
   </main>
@@ -82,8 +113,24 @@
 	<p class="footer-copyrigth">
 	 <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy-small.svg" alt="логотип htmlacademy" 
 	 width="108" height="39"></a>
-	 Сделано в HTML Academy 2019
+	 Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> 2019
 	</p>
 	</footer>
+	
+	
+	 
+	 <section class="modal-answer">
+	  <h2 class="answer">Мы обязательно вам ответим!</h2>
+	  <form class="answer-form" action="https://echo.htmlacademy.ru" method="post">
+	   <label class="visually-hidden" for="user-name-for-answer">Имя пользователя</label>
+	   <input class="answer-user-name" id="user-name-for-answer" type="text" name="user-name" placeholder="Как вас зовут?"  required>
+	   <label class="visually-hidden" for="user-email-for-answer">Почта пользователя</label>
+	   <input class="answer-user-email" id="user-email-for-answer" type="email" name="user-email" placeholder="Ваша почта для ответа?" required>
+	   <textarea class="answer-comment-field" id="field-for-answer" name="comment-field" placeholder="Напишите что-нибудь..."></textarea>
+	   <button class="button" type="submit">Отправить</button>
+	   </form>
+	   <button class="button-close" type="button">X</button>
+	 </section>
+	 
  </body>  
 </html>
