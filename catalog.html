@@ -3,9 +3,12 @@
   <head>
    <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
   </head>
   
-  <body>
+  <body class="inner-page">
    <header class="main-header">
     <nav class="navigation">
 	 <a class="main-header-logo" href="index.html">
@@ -16,9 +19,9 @@
 	  <li><a href="price.html">Доставка и оплата</a></li>
 	  <li><a href="info.html">О Компании</a></li>
 	 </ul> 
-         <p><a class="search" href="search.html">Поиск</a></p>
-	    <p><a class="login-link" href="login.html">Вход</a></p>
-	    <p><a class="basket" href="basket.html">2 товара</a></p>
+         <a class="search" href="search.html">Поиск</a>
+	    <a class="login-link" href="login.html">Вход</a>
+	    <a class="basket" href="basket.html">2 товара</a>
 		 <h2 class="visually-hidden">Список покупок</h2>
 		  <ul>
 		    <li>
@@ -38,7 +41,6 @@
 			   <button class="button-close" type="button">x</button>
 			</li>
 		  </ul>
-		  <hr>
 		  <p> Итого: 750 руб.</p>
 		  <button class="button" type="submit">Оформить заказ</button>
 	</nav>
@@ -50,14 +52,12 @@
 	  <li><a href="#">Каталог</a></li>
 	  <li class="breadcrumbs-current">Сливочное</li>
 	 </ul>
-	 <p class="time">
-	   с 10 до 20, ежедневно
-	   8 812 450-25-25
-	 </p> 
+	 <p class="time">с 10 до 20, ежедневно</p>
+	  <p class="telnomer"> 8 812 450-25-25</p> 
 	<h1>Сливочное мороженое</h1>
 	 <section class="filters">
 	  <h2 class="visually-hidden">Фильтры</h2>
-	  <p class="filters-sort">Сортировка: по популярности</p>
+	  <p class="filters-sort">Сортировка: <span> по популярности</span></p>
 	  <p class="filters-price">Цена: 100 - 500 руб.</p>
 	  <p class="filters-fatness">Жирность</p>
 	    <ul class="fatness-list">
@@ -74,7 +74,7 @@
 		  <li>сиропы</li>
 		  <li>джемы</li>
 		</ul>
-	  <p class="button-filters">Применить</p>
+	  <button class="button-filters">Применить</button>
 	 </section>
 	 <section class="ice">
 	  <h2 class="visually-hidden">Список</h2>
@@ -208,25 +208,25 @@
 		 </li>
 		</ul> 
 		 <ul class="pagination-list">
-	   <li class="pagination-item pagination-imem-current"><a>1</a></li>
-	   <li class="pagination-item"><a href="#">2</a></li>
-	   <li class="pagination-item"><a href="#">3</a></li>
-	   <li class="pagination-item"><a href="#">4</a></li>
-	   <li class="pagination-item"><a href="#">5</a></li>
-	 </ul>
+	      <li class="pagination-item pagination-imem-current"><a>1</a></li>
+	      <li class="pagination-item"><a href="#">2</a></li>
+	      <li class="pagination-item"><a href="#">3</a></li>
+	      <li class="pagination-item"><a href="#">4</a></li>
+	      <li class="pagination-item"><a href="#">5</a></li>
+	    </ul>
 	 </section>
 	</main>
 	<footer class="main-footer">
 	 <div class="footer-social">
-	  <ul>
-	   <li><a class="button-social" href="#"><img src="img/twitter.svg" alt="твиттер">Твиттер</a></li>
-	   <li><a class="button-social" href="#"><img src="img/insta.svg" alt="инстаграмм">Инстаграмм</a></li>
-	   <li><a class="button-social" href="#"><img src="img/facebook.svg" alt="фейсбук">Фейсбук</a></li>
-	   <li><a class="button-social" href="#"><img src="img/vkontakte.svg" alt="вконтаке">Вконтакте</a></li>
+	  <ul class="social-list">
+	   <li><a class="button-social" href="#"><img src="img/twitter.svg" alt="твиттер"></a></li>
+	   <li><a class="button-social" href="#"><img src="img/insta.svg" alt="инстаграмм"></a></li>
+	   <li><a class="button-social" href="#"><img src="img/facebook.svg" alt="фейсбук"></a></li>
+	   <li><a class="button-social" href="#"><img src="img/vkontakte.svg" alt="вконтаке"></a></li>
 	  </ul>
 	 </div>
 	<div class="footer-documents">
-	  <ul>
+	  <ul class="documents-list">
 	   <li><a href="#">Для поставщиков</a></li>
 	   <li><a href="#">О производстве</a></li>
 	   <li><a href="#">Наши документы</a></li>

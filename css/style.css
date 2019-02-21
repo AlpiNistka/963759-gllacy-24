@@ -1,0 +1,228 @@
+body {
+	margin: 0;
+	padding: 0;
+	
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+    color: #323232;
+	
+	background-color: #849d8f;
+}
+
+a {
+	color: #ffffff;
+}
+
+.inner-page {
+	color: #ffffff;
+}
+.navigation {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 18px;
+	color: #ffffff;
+}
+
+.search,
+.login-link {
+	font-size: 14px;
+	line-height: 16px;
+}
+.nav-list,
+.catalog-list {
+	list-style: none;
+}
+
+.nav-list a,
+.catalog-list a {
+	color: #ffffff;
+}
+
+.login-form{ 
+font-size: 18px;
+line-height: 24px;
+}
+
+.login-form a {
+	font-size: 13px;
+	color: #323232;
+}
+
+.login-form button {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.button{
+	background-color: #ea5339;
+}
+
+.breadcrumbs {
+	list-style: none;
+}
+
+.time {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.telnomer {
+	font-size: 22px;
+	line-height: 24px;
+}
+
+.time,
+.telnomer{
+	font-weight: bold;
+}
+
+.promo {
+	font-weight: bold;
+	color: #ffffff;
+}
+.promo p {
+	font-size: 60px;
+	line-height: 60.35px;
+}
+.button {
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 44px;
+}
+
+.raspberry {
+	background-image: url("img/berry-fon.jpg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.chocolate {
+	background-image: url("img/choc-fon.jpg");
+}
+
+.raspberry h3,
+.chocolate h3 {
+	font-size: 35px;
+	line-height: 41px;
+}
+.raspberry p,
+.chocolate p {
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.raspberry button,
+.chocolate button {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.hit_ice {
+	list-style: none;
+}
+
+.ice-item-price{
+	font-size: 45px;
+}
+.ice-item-price span{
+	font-size: 30px;
+}
+
+.hit-item a {
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 22px;
+}
+
+.features {
+	background-image: url("img/vaflya-fon.jpg");
+	background-repeat: no-repeat;
+}
+
+.features-list {
+	list-style: none;
+}
+
+.features h2 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.filters-sort,
+.filters-price,
+.filters-fatness {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.filters-fillers {
+	font-size: 14px;
+	line-height: auto;
+}
+
+.filters-sort span,
+.fatness-list,
+.fillers-list,
+button {
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.new h2 {
+	font-size: 16px;
+}
+
+.new a {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+.mailing button,
+.contacts button {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.contacts p {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.adress,
+.tel {
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 24px;
+}
+
+.tel {
+	line-height: 22px;
+}
+
+.ice-list,
+.pagination-list,
+.social-list,
+.documents-list {
+	list-style: none;
+}
+
+.pagination-list a{
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.documents-list {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.documents-list li:first-of-type{
+	font-weight: bold;
+}
+
+.footer-copyright {
+	font-size: 12px;
+	line-height: 18px
+
