@@ -3,7 +3,7 @@
   <head>
    <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
   </head>
@@ -19,54 +19,61 @@
 	  <li><a href="price.html">Доставка и оплата</a></li>
 	  <li><a href="info.html">О Компании</a></li>
 	 </ul> 
-         <a class="search" href="search.html">Поиск</a>
-	    <a class="login-link" href="login.html">Вход</a>
-	    <a class="basket" href="basket.html">2 товара</a>
+	    <div class="nav-button">
+         <button class="button-image button-image-loupe"><a class="search" href="search.html"></a></button>
+	    <button class="button-image button-image-entry"><a class="login-link" href="login.html">Вход</a></button>
+	    <button class="button-image button-image-basket two-article"><a class="basket" href="basket.html">2 товара</a></button>
+		</div> 
+		 <div class="content-basket">
 		 <h2 class="visually-hidden">Список покупок</h2>
-		  <ul>
-		    <li>
-			  <p>
-			    <img src="img/product/ice1min.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33">
-				Пломбир с апельсиновым джемом 
-			  <span>1,5x200руб. </span><span> 300руб </span>
-			   </p>
-			   <button class="button-close">x</button>
-			</li>
-			<li>
-			   <p>
-			   <img src="img/product/ice3min.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
-			   Клубничный пломбир с присыпкой из белого шоколада 
-			   <span>1,5x300руб. </span><span> 450руб </span>
-			   </p>
-			   <button class="button-close" type="button">x</button>
-			</li>
-		  </ul>
-		  <p> Итого: 750 руб.</p>
-		  <button class="button" type="submit">Оформить заказ</button>
+		    <ul class="basket-list">
+		      <li>
+			    <p>
+			      <img src="img/product/ice1min.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33">
+				  Пломбир с апельсиновым джемом 
+			      <span>1,5x200руб. </span><span> 300руб </span>
+			    </p>
+			    <button class="button-close">x</button>
+			  </li>
+			  <li>
+			     <p>
+			     <img src="img/product/ice3min.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
+			     Клубничный пломбир с присыпкой из белого шоколада 
+			     <span>1,5x300руб. </span><span> 450руб </span>
+			     </p>
+			     <button class="button-close" type="button">x</button>
+			   </li>
+		    </ul>
+		    <p> Итого: 750 руб.</p>
+		    <button class="button" type="submit">Оформить заказ</button>
+		  </div>
 	</nav>
 	</header>
 	
 	<main class="container">
-	 <ul class="breadcrumbs">
-	  <li><a href="index.html">Главная</a></li>
-	  <li><a href="#">Каталог</a></li>
-	  <li class="breadcrumbs-current">Сливочное</li>
-	 </ul>
-	 <p class="time">с 10 до 20, ежедневно</p>
-	  <p class="telnomer"> 8 812 450-25-25</p> 
-	<h1>Сливочное мороженое</h1>
-	 <section class="filters">
-	  <h2 class="visually-hidden">Фильтры</h2>
-	  <p class="filters-sort">Сортировка: <span> по популярности</span></p>
-	  <p class="filters-price">Цена: 100 - 500 руб.</p>
-	  <p class="filters-fatness">Жирность</p>
+	 <div class="breadcrumbs-column">
+	  <ul class="breadcrumbs">
+	   <li><a href="index.html">Главная</a></li>
+	   <li><a href="#">Каталог</a></li>
+	   <li class="breadcrumbs-current">Сливочное</li>
+	  </ul>
+	  <p class="time">с 10 до 20, ежедневно
+	  <span class="telnomer"> 8 812 450-25-25</span></p>
+     </div>
+     <div class="filters-column">	 
+	   <h1>Сливочное мороженое</h1>
+	   <section class="filters">
+	    <h2 class="visually-hidden">Фильтры</h2>
+	    <p class="filters-sort">Сортировка: <span> по популярности</span></p>
+	    <p class="filters-price">Цена: 100 - 500 руб.</p>
+	    <p class="filters-fatness">Жирность</p>
 	    <ul class="fatness-list">
 		  <li> 0%</li>
 		  <li>до 10%</li>
 		  <li>до 30%</li>
 		  <li>выше 30%</li>
 		</ul>
-	  <p class="filters-fillers">Наполнители:</p>
+	    <p class="filters-fillers">Наполнители:</p>
 	    <ul class="fillers-list">
 		  <li>шоколадные</li>
 		  <li>сахарные присыпки</li>
@@ -74,8 +81,9 @@
 		  <li>сиропы</li>
 		  <li>джемы</li>
 		</ul>
-	  <button class="button-filters">Применить</button>
-	 </section>
+	    <button class="button-filters">Применить</button>
+	   </section>
+	  </div>
 	 <section class="ice">
 	  <h2 class="visually-hidden">Список</h2>
 	   <ul class="ice-list">

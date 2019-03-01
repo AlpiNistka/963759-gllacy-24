@@ -3,7 +3,7 @@
   <head>
    <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
   </head>
@@ -14,7 +14,7 @@
 	 <img src="img/logotype.svg" alt="логотип" width="154" height="64">
 	 </a>
 	 <ul class="nav-list">
-	  <li><a href="catalog.html">Каталог</a>
+	  <li class="nav-catalog"><a href="catalog.html">Каталог</a>
 	   <ul class="catalog-list">
 	    <li><a href="#">Новинки</a></li>
 	    <li><a href="#">Сливочное</a></li>
@@ -26,14 +26,13 @@
 	  <li><a href="price.html">Доставка и оплата</a></li>
 	  <li><a href="info.html">О Компании</a></li>
 	 </ul>
-      <div>
-        <a class="search" href="search.html">Поиск</a>
+      <div class="nav-button">
+        <button class="button-image button-image-loupe"><a class="search" href="search.html"></a></button>
 		<form class="search-form" action="https://echo.htmlacademy.ru" method="get">
 	     <label class="visibully-hidden" for="field-search">Поиск</label>
 	     <input class="button-search" type="search" name="search" placeholder="Что ищем?" id="field-search">
 	    </form>
-	  </div>
-     	<a class="login-link" href="login.html">Вход</a>
+     	<button class="button-image button-image-entry"><a class="login-link" href="login.html">Вход</a></button>
 	 <h2 class="visually-hidden">Личный кабинет</h2>
 	 <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
 	  <label class="visually-hidden" for="user_email">Электронная почта пользователя</label>
@@ -44,26 +43,33 @@
 	  <a class="restore" href="#">Забыли пароль?</a>
 	  <a class="new-registration" href="#">Новая регистрация</a>
 	 </form> 
-       <a class="basket" href="basket.html">Пусто</a>
+       <button class="button-image button-image-basket"><a class="basket" href="basket.html">Пусто</a></button>
+	   </div>
 	</nav>
 	</header>
 	
 	<main class="container">
 	<h1 class="visually-hidden">Магазин мороженого</h1>
+	<p class="time">с 10 до 20, ежедневно</p>
+    <p class="telnomer"> 8 812 450-25-25</p> 
 	<section class="promo">
-	  <h2 class="vissually-hidden">Акция</h2>
-	  <p>Крем-брюле и пломбир с малиновым джемом</p>
-	  <button class="button">Давайте оба!</button>
-	  <div class="raspberry">
-	    <h3>Малинка даром!</h3>
-		<p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-		<button class="button">Хочу варенье!</button>
+	  <div class="slider">
+	   <h2 class="visually-hidden">Акция</h2>
+	   <p>Крем-брюле и пломбир с малиновым джемом</p>
+	   <button class="button">Давайте оба!</button>
 	  </div>
-      <div class="chocolate">
-	    <h3>Шоколадки даром!</h3>
-		<p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно</p>
-		<button class="button">Хочу шоколадки!</button>
-      </div>	
+	  <div class="offer">
+	    <div class="raspberry">
+	     <h3>Малинка даром!</h3>
+		 <p>При покупке 2 кг любого фруктового мороженного, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+		 <button class="button">Хочу варенье!</button>
+	    </div>
+        <div class="chocolate">
+	      <h3>Шоколадки даром!</h3>
+		  <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно</p>
+		  <button class="button">Хочу шоколадки!</button>
+        </div>
+      </div>		
       <ul class="hit_ice">
 	    <li class="hit-item">
 		  <p class="ice-item-image">
@@ -119,35 +125,38 @@
 	 </ul>
 	</section> 
 	
+	<div class="index-columns">
 	<section class="news">
-	<h2 class="visually-hidden">Новости</h2>
-	<p>Новое в нашем блоке</p>
-	<p class="news-item"><a href="#">10 способов сервировки 
-	фруктовых щербетов к столу</a></p>
+	  <h2 class="visually-hidden">Новости</h2>
+	  <p>Новое в нашем блоке</p>
+	  <p class="news-item"><a href="#">10 способов сервировки 
+	    фруктовых щербетов к столу</a></p>
 	</section>
-	
 	<section class="mailing">
-	<h2 class="visually-hidden">Рассылка</h2>
-	<p>Подпишитесь на нашу сладкую рассылку и будете всегда в
-	курсе всего самого вкусного, что у нас просиходит. Обещаем
-	не спамить и не слать ненужной ерунды. Честно=) </p>
-	 <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
-	  <label class="visually-hidden" for="email-for-mailling">Электронная почта</label>
-	 <input class="mail" type="email" id="email-for-mailling" name="mailing" placeholder="Электронная почта">
-	 </form>
-	<p>
-      <button class="button">Отправить</button>
-	</p>
+	  <h2 class="visually-hidden">Рассылка</h2>
+	    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в
+	      курсе всего самого вкусного, что у нас просиходит. Обещаем
+	      не спамить и не слать ненужной ерунды. Честно=) </p>
+	    <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
+	      <label class="visually-hidden" for="email-for-mailling">Электронная почта</label>
+	      <input class="mail" type="email" id="email-for-mailling" name="mailing" placeholder="Электронная почта">
+	     </form>
+	     <p>
+         <button class="button">Отправить</button>
+	    </p>
 	</section>
+	</div>
+	<div class="contacts-columns">
 	<section class="map">
 	  <h2 class="visually-hidden">Контакты</h2>
-	  <img src="img/map.jpg" alt="карта" height="250" width="500">
+	  <img src="img/map.jpg" alt="карта" height="432" width="1200">
 	  <div class="contacts">
 	    <p>Адрес главного офиса и офлайн-магазина: <span class="adress">ул.Большая Конюшенная 19/8, Санкт-Петербург</span></p>
 	    <p>Для заказов по телефону: <span class="tel"> 8 812 450-25-25</span> (с 10 до 20 ежедневно)</p>
 	    <button class="button">Форма обратной связи</button>
 	  </div>
 	</section>
+	</div>
   </main>
 	<footer class="main-footer">
 	 <div class="footer-social">
