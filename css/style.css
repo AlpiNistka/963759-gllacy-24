@@ -442,11 +442,16 @@ text-decoration: none;
 	line-height: auto;
 }
 
-.filters-sort span,
+.filters-sort,
 .fatness-list,
 .fillers-list button {
 	font-size: 16px;
 	line-height: 18px;
+}
+
+.fatness-list,
+.fillers-list {
+	list-style: none;
 }
 
 .index-columns {
