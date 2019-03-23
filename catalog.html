@@ -28,23 +28,22 @@
 		 <h2 class="visually-hidden">Список покупок</h2>
 		    <ul class="basket-list">
 		      <li>
-			    <p>
-			      <img src="img/product/ice1min.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33">
-				  Пломбир с апельсиновым джемом 
-			      <span>1,5x200руб. </span><span> 300руб </span>
+			    <p><img src="img/product/ice1min.jpg" alt="Пломбир с апельсиновым джемом" width="33" height="33">
+				<span class="name-product">Пломбир с апельсиновым джемом </span>
+			      <span class="quantity">1,5 x</span><span class="price"> 200руб. </span><span class="sum"> 300руб </span>
 			    </p>
-			    <button class="button-close">x</button>
+			    <button class="button-delite-1">x</button>
 			  </li>
 			  <li>
 			     <p>
 			     <img src="img/product/ice3min.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33" height="33">
-			     Клубничный пломбир с присыпкой из белого шоколада 
-			     <span>1,5x300руб. </span><span> 450руб </span>
+			     <span class="name-product">Клубничный пломбир с присыпкой из белого шоколада</span> 
+			     <span class="quantity">1,5 x</span><span class="price"> 300руб.</span><span class="sum"> 450руб </span>
 			     </p>
-			     <button class="button-close" type="button">x</button>
+			     <button class="button-delite-2" type="button">x</button>
 			   </li>
 		    </ul>
-		    <p> Итого: 750 руб.</p>
+		    <p class="total-amount"> Итого: 750 руб.</p>
 		    <button class="button" type="submit">Оформить заказ</button>
 		  </div>
 	</nav>
@@ -63,6 +62,7 @@
      <div class="filters-column">	 
 	   <h1>Сливочное мороженое</h1>
 	   <section class="filters">
+	   <form>
 	    <h2 class="visually-hidden">Фильтры</h2>
 	    <p class="filters-sort">Сортировка: 
 		    <select name="sort" id="sort">
@@ -105,17 +105,18 @@
 			<label for="jam">джемы</label></li>
 		</ul>
 	    <button class="button-filters">Применить</button>
+		</form>
 	   </section>
 	  </div>
 	 <section class="ice">
-	  <h2 class="visually-hidden">Список</h2>
+	  <h2 class="visually-hidden">Ассортимент</h2>
 	   <ul class="ice-list">
 	     <li class="ice-item">
 		  <p class="ice-item-image">
 		   <img src="img/product/ice1.jpg" alt="Сливочное с апельсиновым
 		  джемом и цитрусовой стружкой" width="267" height="267">
 		  </p>
-		  <p class="ice-item-price">310 Р/<span class="weight">кг</span>
+		  <p class="ice-item-price">310 ◘/<span class="weight">кг</span>
 		  </p>
 		  <p class="ice-item-name"><a href="#">Сливочное с апельсиновым
 		  джемом и цитрусовой стружкой</a>
