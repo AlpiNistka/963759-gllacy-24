@@ -1,7 +1,9 @@
+html,
 body {
 	margin: 0 auto;
 	padding: 0;
 	width: 1200px;
+	min-width: 940px;
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 22px;
@@ -43,12 +45,12 @@ body {
 	margin: 0 auto;
 	margin-top: 10px;
 	padding: 0 27px;
-	border: 1px solid green;
+	
 }
 .main-header-logo {
 	width: 154px;
 	height: 64px;
-	outline: 1px solid black;
+	
 }
 .nav-list {
 	display: flex;
@@ -58,7 +60,7 @@ body {
 	padding: 20px 10px;
 	margin: 0;
 	padding-left: 24px;
-	outline: 1px solid black;
+	
 
 }
 
@@ -70,7 +72,6 @@ body {
 	width: 267px;
 	float: right;
 	margin-left: 293px;
-	border: 1px solid black;
 	text-align: right;
 
 }
@@ -102,11 +103,16 @@ body {
 	position: relative;
 	display: inline-block;
 }
+
+.nav-list li {
+	padding: 10px 15px;
+	border-radius: 20px;
+}
 	
 .catalog-list {
-   /*display: none;*/
+   display: none;
    position: absolute;
-   top: 30px;
+   top: 40px;
    left: -30px;
    width: 133px;
    margin: 0 ;
@@ -115,17 +121,19 @@ body {
    text-decoration: none;
    font-weight: normal;
    background-color: #f8f7f4;
-  /*border: 1px solid red;*/
+   border: none;
    border-radius: 10px;
    z-index: 2;	
 }
 
 .catalog-list li {
 	padding: 5px 0px;
+	border: none;
 }
 
 .catalog-list li:first-child {
 	font-weight: bold;
+	border: none;
 	border-bottom: 2px solid #d1d0ce;
 }
 
@@ -139,11 +147,10 @@ color: #323232;
 }
 
 li.nav-catalog:hover {
+	padding: 10px 15px;
 	color: #323232;
 	background-color: #f7f6f3;
-	padding: 5px 15px;
-    border: 1px solid blue;
-	border-radius: 15px;	
+	border-radius: 20px;	
 }
 
 
@@ -160,13 +167,17 @@ li.nav-catalog:hover {
 }
 
 .catalog-list li:hover{
+	color: #323232;
 	background-color: #fbded7;
 
 }
 
+.catalog-list li:hover a {
+    color: #323232;
+}
 
 .search-form {
-	/*display: none;*/
+	display: none;
 	position:absolute;
 	top: 65px;
 	right: 220px;
@@ -204,7 +215,7 @@ li.nav-catalog:hover {
 }
 
 .login-form{ 
-/*display: none;*/
+display: none;
 position:absolute;
 width: 240px;
 top: 65px;
@@ -216,7 +227,7 @@ line-height: 24px;
 background-color: #ffffff;
 z-index: 1;
 border-radius: 7px;
-border: 1px solid black;
+
 }
 
 .login-user {
@@ -227,7 +238,7 @@ border: 1px solid black;
 	font-size: 14px;
 	line-height: 24px;
 	border: 1px solid #d3d3d2;
-	border-radius: 5px;
+	
 }
 
 .password-user {
@@ -262,9 +273,11 @@ border: 1px solid black;
 .nav-button:hover form.login-form {
 	display: block;
 }
+.main-basket{
+	display: none;
+}
 
 .content-basket {
-	/*display: none;*/
 	display: flex;
 	flex-direction: column;
 	position: absolute;
@@ -286,11 +299,10 @@ border: 1px solid black;
 	position: relative;
 	margin: 0;
 	padding: 0;
-	
 	width: 515px;
-	list-style: none;
-	border-bottom: 1px solid #ccccc9;
+	
 }
+
 
 .basket-list li {
 	width: auto;
@@ -313,6 +325,9 @@ border: 1px solid black;
 	
 }
 
+.nav-button li:nth-child(3):hover .main-basket{
+	display: block;
+}
 
 .name-product {
 	width: 225px;
@@ -478,12 +493,24 @@ text-decoration: none;
 	display: flex;
 	justify-content: space-between;
 	padding: 0 27px;
-	border: 1px solid black;
+	
 }
 
 .breadcrumbs {
+	display: flex;
+	padding: 0;
+	
 	list-style: none;
-	border: 1px solid black;
+
+}
+
+.breadcrumbs li {
+	padding-right: 5px;
+}
+
+.breadcrumbs a {
+	color: #ffffff;
+	padding-right: 5px
 }
 
 .container {
@@ -498,11 +525,20 @@ text-decoration: none;
 	line-height: 16px;
 	text-align: right;
 	color: #ffffff;
-	/*border: 1px solid black;*/
+	
 	
 }
 
 .phone {
+	position: absolute;
+	top: 20px;
+	right: 27px;
+	font-size: 22px;
+	line-height: 24px;
+	color: #ffffff;
+}
+
+.inner-page .phone {
 	position: absolute;
 	top: 20px;
 	right: 27px;
@@ -516,24 +552,21 @@ text-decoration: none;
 	font-weight: bold;
 }
 
-/*.visually-hidden input {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	clip: rect(0, 0, 0, 0);
-}*/
+
 
 .slider {
+	position: relative;
+	padding-top: 321px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 40px;
-	position: relative;
-	padding-top: 321px;
+	
 	text-align: center;
 	color: #ffffff;
-	border: 1px solid black;
+	
 }
+
 
 .slider-list {
 margin: 0;
@@ -636,14 +669,210 @@ list-style: none;
 }
 
 .filters-column {
-	display: flex;
-	flex-direction: column;
+	width: 863px;
 	padding: 0 27px;
 	margin-bottom: 40px;
-	border: 1px solid black;
+	font-size: 16px;
+	line-height: 18px;
+	
 }
 
-.promo {
+.filters-column form {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.filters-sort {
+	width: 195px;
+	margin: 0;
+	font-size: 16px;
+	line-height: 18px;
+	}
+
+.filters-sort p {
+	margin: 0;
+	padding: 0;
+	padding-left: 16px;
+}
+.sort {
+	margin-top: 5px;
+	padding: 10px 14px;
+	color: #ffffff;
+	background-color: #aabab0;
+	border-radius: 20px;
+}
+
+.filters-price {
+	width: 220px;
+	margin: 0;
+	padding: 0;
+}
+
+.price-controls {
+	display: flex ;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.filters-price p {
+	margin: 0;
+	padding: 0;
+	padding-left: 15px;
+}
+
+.filters-price label {
+	margin: 0;
+	padding: 0;
+
+	cursor: pointer;
+}
+
+.range-controls {
+	position: relative;
+	padding-top: 17px;
+	padding-bottom: 17px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0;
+	border-radius: 20px;
+	background-color: #aabab0;
+	
+}
+
+
+
+.range-controls .scale {
+	width: 178px;
+	height: 4px;
+	background: rgba(255, 255, 255, 0.3);
+}
+.range-controls .bar {
+	position: absolute;
+    width: 45%;
+    height: 4px;
+    left: 15%;
+    background: #ffffff;
+}
+
+.range-toggle {
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	top: 8px;
+	background: #ababab;
+	border: 8px solid #ffffff;
+	border-radius: 50%;
+}
+
+.range-toggle-min {
+	left: 15%;
+}
+
+.range-toggle-max {
+	left: 60%;
+}
+
+
+.filters-fatness {
+	width: 416px;
+}
+
+.filters-fatness p {
+	padding: 0;
+	padding-left: 16px;
+	margin: 0;
+	
+}
+
+.fatness-list {
+	display: flex;
+	justify-content: space-around;
+	margin: 0;
+	margin-top: 5px;
+	padding: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #aabab0;
+	border-radius: 20px;
+}
+
+
+.fatness-list label {
+	padding-left: 11px;
+}
+
+.filters-fillers {
+	width: 703px;
+}
+
+.filters-fillers p {
+	margin: 0;
+	margin-top: 15px;
+	padding: 0;
+	padding-left: 16px;
+}
+
+.fillers-list {
+	display: flex;
+	justify-content: space-around;
+	margin: 0;
+	margin-top: 5px;
+	padding: 0;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background-color: #aabab0;
+	border-radius: 20px;
+}
+
+.fillers-list label {
+	padding-left: 8px;
+}
+
+.button-filters {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 144px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+	background-color: #aabab0;
+	border: 2px solid #ffffff;
+	border-radius: 15px;
+}
+
+.filters-sort,
+.filters-price,
+.filters-fatness {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.filters-fillers {
+	font-size: 14px;
+	line-height: auto;
+}
+
+.filters-sort,
+.fatness-list,
+.fillers-list button {
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.fatness-list,
+.fillers-list {
+	list-style: none;
+}
+	
+	.promo {
 	font-weight: bold;
 	color: #ffffff;
 }
@@ -658,7 +887,7 @@ list-style: none;
 	width: 1146px;
 	padding: 0 27px;
 	margin-bottom: 40px;
-	border: 1px solid black;
+	
 }
 
 .raspberry {
@@ -684,7 +913,6 @@ list-style: none;
 .chocolate {
 	position: relative;
 	width: 520px;
-	/*height: 230px;*/
 	padding-left: 20px;
 	padding-right: 20px;
 	border-radius: 15px;
@@ -725,57 +953,84 @@ list-style: none;
 	justify-content: space-between;
 	min-height: 350px;
 	list-style: none;
-	border: 1px solid black;
 	padding: 0 27px;
 	margin-bottom: 40px;
 }
 
 .hit-item{
+	position: relative;
 	padding: 0;
 	margin: 0;
-	border: 1px solid black;
 	width: 267px;
 }
 
 .ice-list {
 	display: flex;
 	flex-wrap: wrap;
-	/*flex-direction: column;*/
 	justify-content: space-between;
 	padding: 0 27px;
 	margin-bottom: 80px;
-	border: 1px solid black;
 }
 
 .ice-item {
+	position: relative;
+	margin: 0;
 	width: 267px;
 	min-height: 325px;
 	padding: 0;
 	margin-bottom: 40px;
-	border: 1px solid black;
+	
 }
 
+.ice-item a {
+	display: inline-block;
+	text-align: center;
+	color: #ffffff;
+}
 
 .ice-item-image img {
 	padding: 0;
 	border-radius: 50%;
 }
 
-.ice-item-price{
+.ice-item-price {
+	position: absolute;
+	top: 190px;
 	padding: 0;
-	font-size: 45px;
+	font-size: 35px;
+	line-height: 45px;
+	
 }
+
+.inner-page .ice-item-price {
+	position: absolute;
+	top: 190px;
+	padding: 0;
+	font-size: 35px;
+	line-height: 45px;
+}
+
 .ice-item-price span {
 	font-size: 30px;
+	
+}
+
+
+.hit-item p {
+	margin: 0;
 }
 
 .hit-item a {
+	display: inline-block;
 	margin: 0;
 	padding: 0;
-	text-align: center;
+	
 	font-size: 16px;
 	font-weight: normal;
 	line-height: 22px;
+	color: #ffffff;
+	text-align: center;
+	
 }
 
 .features {
@@ -816,7 +1071,7 @@ list-style: none;
 	padding-top: 15px;
 	padding-left: 57px;
 	padding-bottom: 10px;
-	width: /*1106px;*/540px;
+	width: 540px;
 	font-size: 16px;
 	line-height: 22px;
 	box-sizing: border-box;
@@ -843,37 +1098,11 @@ list-style: none;
 	background-repeat: no-repeat;
 }
 
-
-.filters-sort,
-.filters-price,
-.filters-fatness {
-	font-size: 14px;
-	line-height: 16px;
-}
-
-.filters-fillers {
-	font-size: 14px;
-	line-height: auto;
-}
-
-.filters-sort,
-.fatness-list,
-.fillers-list button {
-	font-size: 16px;
-	line-height: 18px;
-}
-
-.fatness-list,
-.fillers-list {
-	list-style: none;
-}
-
 .index-columns {
 	display: flex;
 	justify-content: space-between;
 	width: 1146px;
 	padding: 0 27px;
-	border: 1px solid black;
 	margin-bottom: 40px;
 }
 
@@ -995,14 +1224,36 @@ list-style: none;
 	width: auto;
 	text-align: right;
 	margin: 0 27px;
-	border: 1px solid black;
+	padding: 5px;
+	
 	
 }
 
-.pagination-list a{
+.pagination-list li {
+	
+}
+
+.pagination-list a {
+	
 	font-size: 16px;
 	line-height: 18px;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 5px 10px;
+	border-radius: 50%;
+	
 }
+
+.pagination-imem-current a {
+	margin: 0;
+	padding: 0;
+	color: #323232;
+	background-color: #ffffff;
+	padding: 5px 10px;
+	border-radius: 50%;
+}
+
+
 .main-footer {
 	display: flex;
 	justify-content: center;
@@ -1028,8 +1279,9 @@ list-style: none;
 .button-social {
 	width: 32px;
 	height: 32px;
-	background-color: grey;
+	margin-right: 10px;
 	border-radius: 50%;
+	
 }
 
 
